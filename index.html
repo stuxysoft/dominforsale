@@ -1,37 +1,203 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Domain for Sale</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    h1 {
-      color: #333333;
-      font-size: 24px;
-    }
-    
-    p {
-      color: #666666;
-      font-size: 18px;
-      margin-top: 20px;
-    }
-    
-    .contact {
-      color: #007bff;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  </style>
+    <title>Domain for Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        canvas {
+            display: block;
+            vertical-align: bottom;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            display: inline-block;
+            background-color: #0088cc;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact:hover {
+            background-color: #005580;
+        }
+
+        .domain-list {
+            margin-top: 40px;
+        }
+
+        .domain-list-item {
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            padding: 8px 16px;
+        }
+
+        .domain-list-item a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>You Can Buy This Domain</h1>
-  <p>Please contact me in Telegram:</p>
-  <p class="contact"><a href="https://t.me/vuxes" target="_blank">@vuxes</a></p>
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <h1>You Can Buy This Domain</h1>
+        <p>Please contact me in Telegram:</p>
+        <p class="contact"><a href="https://t.me/vuxes" target="_blank" style="color: #fff;">@vuxes</a></p>
+
+        <div class="domain-list">
+            <p>Also Available Domains:</p>
+            <p class="domain-list-item"><a href="http://ton.vegas" target="_blank">ton.vegas</a></p>
+            <p class="domain-list-item"><a href="http://ton.bingo" target="_blank">ton.bingo</a></p>
+            <p class="domain-list-item"><a href="http://ton.zone" target="_blank">ton.zone</a></p>
+            <p class="domain-list-item"><a href="http://ton.blue" target="_blank">ton.blue</a></p>
+            <p class="domain-list-item"><a href="http://ton.delivery" target="_blank">ton.delivery</a></p>
+            <p class="domain-list-item"><a href="http://ton.watch" target="_blank">ton.watch</a></p>
+            <p class="domain-list-item"><a href="http://ton.promo" target="_blank">ton.promo</a></p>
+            <p class="domain-list-item"><a href="http://ton.coffee" target="_blank">ton.coffee</a></p>
+            <p class="domain-list-item"><a href="http://ton.toys" target="_blank">ton.toys</a></p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        </script>
 </body>
+
 </html>
